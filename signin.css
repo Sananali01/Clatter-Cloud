@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3A3E4B;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .back {
+    position: fixed;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    border-radius: 100px;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    order: 1;
+} 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    background-color: #1e213a;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 4px solid #FF9138;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    transition: box-shadow 0.3s;
+  }
+  
+  input:focus {
+    box-shadow: 0 0 10px #FF9138;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .login-button,
+  .register-link {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+  
+  .login-button {
+    background-color: transparent;
+    color: #FF9138;
+  }
+  
+  .login-button:hover {
+    background-color: #FF9138;
+    color: #000000;
+    box-shadow: none;
+  }
+  
+  .login-button:active {
+    box-shadow: 0 0 10px #FF9138;
+  }
+  
+  .register-link {
+    color: #ccc;
+    background-color: transparent;
+  }
+  
+  .register-link:hover {
+    color: #fff;
+  }
+  
+  .register-link:active {
+    box-shadow: 0 0 10px #ccc;
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  
+  @media (min-width:320px) and (max-width: 420px) {
+    .card {
+      width: 70%;
+    }
+  }
+  
